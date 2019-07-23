@@ -1,0 +1,120 @@
+#pre_deposit_dialog {
+	font-family: "Gilroy-Bold";
+	font-size: 14px;
+	padding: 0;
+	width: fit-content;
+}
+#pre_deposit_dialog span {
+	vertical-align: initial;
+}
+#deposit-header {
+	border-bottom: 2px solid rgba(0,0,0,0.1);
+	padding: 26.5px 20.5px 16px;
+}
+#deposit-header h1, #deposit-header h2{
+	margin: 0;
+	flex: 1;
+	display: flex;
+    align-items: center;
+    padding: 0;
+}
+#pre_deposit_dialog h1{
+	font-size: 20px;
+}
+#pre_deposit_dialog h2{
+	font-size: 16px;
+	justify-content: flex-end;
+}
+.deposit-currencies {
+	border-right: 2px solid rgba(0,0,0,0.1);
+	padding: 15px 0 35.5px;
+}
+.deposit-currencies>* {
+	padding-left: 10px;
+}
+.deposit-currencies .currency{
+	padding-right: 30px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+    cursor: pointer;
+}
+.deposit-currencies .currency.selected{
+	background: rgba(225, 226, 227, 0.58);
+}
+.deposit-currencies .currency img{
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+}
+.deposit-dialog-sideshift {
+	font-weight: 700;
+	margin-top: auto;
+	color: #2D7CC2;
+	text-align: center;
+}
+#deposit-qr-section {
+	flex: 1;
+	align-items: center;
+	padding: 18px 26px 30px 26px;
+}
+#deposit-qr-section h2 {
+	font-weight: 900;
+	margin: 0 16px 0;
+}
+.deposit-qr-container {
+	height: 120px;
+	width: 120px;
+	margin: 16px 0 24px;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#address-qr-pre-deposit {
+	height: 100px;
+}
+.address-control-bar {
+	margin-top: 16px;
+}
+.address-control-bar div {
+	padding: 8px 20px;
+	white-space: nowrap;
+	margin: 0 6px;
+	border-radius: 3px;
+	border: 1px solid #C7CDD9;
+	cursor: pointer;
+}
+.address-control-bar .wallet {
+	background-image: linear-gradient(-180deg, #15d6a0 0%, #0ac18e 100%);
+	border: none;
+	color: white;
+}
+@media only screen and (max-width: 1000px) {
+	#pre_deposit_dialog {
+		font-size: 18px;
+	}
+	#pre_deposit_dialog h1{
+		font-size: 26px;
+	}
+	#pre_deposit_dialog h2{
+		padding-top: initial;
+		font-size: 24px;
+	}
+	#deposit-header {
+		padding: 25px 20.5px;
+	}
+	#deposit-qr-section {
+		padding: 10px 0 30px 0;
+	}
+	.address-control-bar {
+		flex-direction: column;
+	}
+	.address-control-bar div {
+		padding: 6px 20px;
+	}
+	/* .address-control-bar div {
+		margin: 2px 6px;
+	} */
+}

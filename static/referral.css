@@ -1,0 +1,453 @@
+/* Unset CSS from other stylesheets */
+
+input {
+	padding: unset;
+}
+
+button {
+	padding: unset;
+}
+
+body {
+	height: unset;
+}
+
+button {
+	font: unset;
+}
+
+#ultra_container, #center_outer_alley_contents, .container {
+	min-width: unset;
+	max-width: unset;
+}
+
+h1, h2, h3, h4 {
+	margin: unset;
+}
+
+.game-card {
+	background-image: unset;
+	width: unset;
+	height: unset;
+	border-radius: unset;
+	box-shadow: unset;
+}
+
+#header {
+	background: unset;
+}
+
+/************************************/
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	background: unset;
+	background-color: #FAFAFB;
+	padding: 5% 10% 10% 10%;
+	font-family: museo-sans;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+h4 {
+	font-size: 12px;
+}
+
+button {
+	background: #13d19c;
+	border-radius: 3px 3px 3px 3px;
+	height: 33px;
+	width: 170px;
+	font-size: 12px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+}
+
+.card-holder {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 32px;
+}
+
+@media only screen and (max-width: 1268px) {
+  html {
+    min-width: 768px;
+  }
+  /* For mobile phones: */
+  .card-holder {
+    grid-template-columns: 1fr;
+  }
+}
+
+.game-card {
+	background: white;
+	border-radius: 6px 4px 4px 4px;
+	border: 1px solid #CCCCCC;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.game-card.card-1 {
+	padding: 23px 34px 24px 24px;
+}
+
+.game-card.card-2 {
+	padding: 21px 40px 29px 16px;
+	margin-bottom: 32px;
+}
+
+/* Header CSS */
+
+#header {
+	position: relative;
+	margin-bottom: 57px;
+}
+
+#header .right {
+	text-align: right;
+	display: flex;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.right h2 {
+	margin-left: .5em;
+}
+
+#header a {
+	padding-bottom: 10px;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+#header a:hover, #header a.active{
+	border-bottom: solid 4px #13d19c;
+	color: black;
+}
+
+/* Stats Cards CSS */
+
+#holder-1 {
+	margin-bottom: 50px;
+}
+
+#holder-1 h3 {
+	font-size: 17px;
+	margin-bottom: 24px;
+}
+
+#holder-1 .game-card {
+	position: relative;
+	height: 250px;
+}
+
+.stat {
+	display: flex;
+	margin-bottom: 19px;
+	font-size: 15px;
+}
+
+.stat>.name {
+	opacity: .61;
+}
+
+.stat>.rule {
+	flex-grow: 2;
+	border-bottom: 1px dotted black;
+	height: 13px;
+	margin: 0 1px;
+	opacity: .16;
+}
+
+#holder-1 button{
+	position: absolute;
+	bottom: 32px;
+}
+
+/* Referral Link CSS */
+
+.card-2 {
+	position: relative;
+}
+
+@media only screen and (max-width: 1268px) {
+	/* For mobile phones: */
+	#referral-link {
+		height: 100px;
+	}
+	.iframe-link {
+		height: 150px;
+	}
+	.ru.iframe-link {
+		height: 250px;
+	}
+	#referral-link>.card-2-container>div {
+		transform: translateY(28px);
+	}
+	.iframe-link>.card-2-container>div {
+		transform: translateY(15px);
+	}
+	.ru.iframe-link>.card-2-container>div {
+		transform: translateY(60px);
+	}
+}
+
+.card-2 h3 {
+	margin-bottom: 13px;
+}
+
+.card-2 input {
+	height: 33px;
+	width: 300px;
+	border-radius: 4px;
+	border: 1px solid #CDCDCD;
+	margin-right: 14px;
+	line-height: 34px;
+	text-align: center;
+}
+
+.card-2 span {
+	margin-top: 8px;
+	display: block;
+	font-size: 14px;
+	width: 422px;
+	opacity: .54;
+}
+.center {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.card-2-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-2-container>div {
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+}
+
+#iframe-link button:first-child{
+	margin-bottom: 5px;
+}
+
+/* Image Cards CSS */
+
+div.preview {
+	width: 166px;
+	height: 113px;
+	margin-bottom: 27px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #d3d3d3;
+	background-origin: content-box;
+	border-radius: 4px;
+	padding: 15px;
+}
+
+.image-card a {
+	color: #2D7CC2;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+
+.image-card h3 {
+	margin-bottom: 17px;
+}
+
+.image-card h4 {
+	margin-bottom: 7px;
+}
+
+.image-card textarea {
+	height: 143px;
+	width: 200px;
+	padding: 9px 11px 5px 17px;
+	margin: 0 0 13px 0;
+	border-radius: 4px;
+	border: 1px solid #CDCDCD;
+	resize: none;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+}
+
+.image-card button {
+	width: 100%;
+	position: relative;
+}
+
+.image-card button:after {
+	content: "Copy this code to embed on your website";
+	position: absolute;
+	top: 140%;
+	left: 0;
+	width: 100%;
+	font-size: 11px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.41);
+	text-transform: none;
+	cursor: initial;
+}
+
+.image-card>div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-hor {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-vert {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Lightbox CSS */
+.iframe-preview {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 24px 34px 54px 24px;
+        width: fit-content;
+}
+.iframe-buttons {
+	margin-top: 10px;
+	justify-content: space-around;
+}
+.iframe-buttons input{
+	text-align: center;
+	position: relative;
+}
+.iframe-buttons::after{
+	content: "height (max 600)";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-57%, -45px);
+}
+.iframe-buttons.ru::after{
+	content: "высота (макс. 600)";
+}
+#payout-table {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 410px;
+        height: 470px;
+        background: white;
+        padding: 24px 34px 24px 24px;
+}
+
+#welcome-list {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 610px;
+	height: 250px;
+	background: white;
+	padding: 24px 34px 24px 24px;
+}
+
+@media only screen and (max-width: 768px) {
+	#welcome-list {
+		width: 410px;
+		height: 330px;
+	}
+}
+
+#payout-table h2,
+#welcome-list h2 {
+        text-align: center;
+}
+
+#payout-table span,
+#welcome-list span {
+        text-align: center;
+}
+
+#payout-table h3,
+#welcome-list h3{
+	margin-bottom: 24px;
+}
+
+#close-btn {
+	margin-top: 10px;
+}
+
+.edge>.name {
+	margin: 30px 0 12px 0;
+}
+
+.value.light {
+	font-weight: 500;
+	line-height: 25px;
+}
+#games-iframe-container {
+    overflow: hidden;
+}
+@media only screen and (max-width: 823px) {
+    #games-iframe-container {
+        overflow: visible;
+    }
+    .iframe-preview {
+        width: 85%;
+    }
+    .iframe-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-height: 500px) {
+    #games-iframe-container {
+        transform-origin: center;
+    }
+    .iframe-preview {
+        height: 320px;
+    }
+}
+button#copy-ru-custom {
+    height: 55px;
+}
+.ru.iframe-buttons input{
+    height: 33px;
+    align-self: center;
+}
+.ru #close-btn {
+    margin-top: 0;
+    align-self: center;
+}

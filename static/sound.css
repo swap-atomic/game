@@ -1,0 +1,56 @@
+/*
+#control_sound {
+    float:left;
+    margin-left: 8px;
+    width: 33px;
+    height: 42px;
+    background-image:url('/static/images/spritesheet.png');
+    cursor: pointer;
+    background-position: -35px -1116px;
+}
+#control_sound.off
+{ 
+    background-position: 0px -1116px;
+}
+*/
+#control_volume
+{ 
+    float: left;
+    position: relative;
+    width: 60px;
+    height: 14px;
+    margin-top: 16px;
+    cursor: pointer;
+    z-index: 104;
+    opacity:0.00;
+}
+#volume_knob
+{ 
+    position: absolute;
+    left: 45px;
+    top: 0px;
+    width: 5px;
+    background: #dddddd;
+    height: 14px;
+    z-index: 103;
+}
+#volume_redbar
+{ 
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    background: #b91f1f;
+    width: 35px;
+    height: 4px;
+    z-index: 102;
+}
+#volume_graybar
+{ 
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    background: #757575;
+    width: 50px;
+    height: 4px;
+    z-index: 101;
+}

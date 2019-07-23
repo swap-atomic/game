@@ -1,0 +1,242 @@
+#account_container {
+    background: rgba(0,0,0, 0.8);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    
+    /* On the samsung s3 (chrome), the bar is not flush against the bottom of the screen. Therefore move the bar 2 pixels below the bottom,
+       and increase padding 2 px to compensate */
+ 
+    bottom: -2px;
+    padding: 8px;
+    
+    z-index: 1002;
+    width: 100%;
+    left:0;
+} 
+
+#account 
+{
+    white-space: nowrap;
+}
+
+#bitcoin_address {
+}
+
+#bitcoin_address a, #bitcoin_address span
+{
+    font-weight: bold; 
+}
+
+#bitcoin_address_help a
+{
+	display: inline-block;
+	color:#999;
+	margin-top:5px;
+}
+
+
+#account_play_for_real_bitcoins_holder, #account_password_reminder_holder
+{
+    position: absolute;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    pointer-events: none;
+}
+
+#account_play_for_real_bitcoins, #account_password_reminder
+{
+	-webkit-animation: pulse 2s infinite;
+	-moz-animation:    pulse 2s infinite;
+	-o-animation:      pulse 2s infinite;
+	animation:         pulse 2s infinite;
+    background: rgba(0,0,0, 0.8);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 8px 0 8px;
+    margin: 0 auto 0 auto;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+
+@-webkit-keyframes pulse {
+  0%   { color: rgba(255,255,255,.5);}
+  100% { color: rgba(255,255,255,1);}
+}
+@-moz-keyframes pulse {
+  0%   { color: rgba(255,255,255,.5);}
+  100% { color: rgba(255,255,255,1);}
+}
+@-o-keyframes pulse {
+  0%   { color: rgba(255,255,255,.5);}
+  100% { color: rgba(255,255,255,1);}
+}
+@keyframes pulse {
+  0%   { color: rgba(255,255,255,.5);}
+  100% { color: rgba(255,255,255,1);}
+}
+#bitcoin_address_qr_popup {
+    position: absolute;
+    display: none;
+    z-index: 50;
+	background:#fff;
+	border-radius:4px;
+    margin: 0;
+    padding: 0;
+    left:0;
+    bottom:60px;
+}
+#bitcoin_address_qr_popup:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 80px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+#bitcoin_address_qr_code
+{
+
+    background-color: #fff;
+	border-radius:4px;
+	overflow:hidden;
+}
+
+#bitcoin_address_qr_image_spinner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    margin: auto;
+    background: url(images/loading_spinner_white.gif) no-repeat center center;
+}
+
+#bitcoin_address_qr_text
+{
+    position: absolute;
+    width: inherit;
+    left: 0px;
+    bottom: 0px;
+	font-size: 10px;
+	line-height: 1.2em;
+	color: #666;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif; 
+}
+
+#bitcoin_address_qr_popup_a
+{
+    display: block;
+}
+
+#bitcoin_balance {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#bitcoin_balance .hilight {
+    color: #fff;
+    font-weight: bold; 
+}
+
+#bitcoin_balance .badlight {
+    color: #ae401d;
+    font-weight: bold; 
+    cursor: help;
+}
+
+#bitcoin_cashout {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#bitcoin_address span {
+	display: block;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+#bitcoin_address_qr_popup label {
+	display: block;
+	font-weight: bold;
+}
+#iframe_deposit_dialog>#dialog-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#iframe_deposit_dialog>#dialog-header>div {
+    display: flex;
+    justify-content: space-between;
+}
+.currency-select {
+    display: flex;
+    padding: 14px 30px 14px 14px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.currency-select.selected {
+    border: 3px solid #FFB600;
+}
+.currency-select>img {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+}
+#iframe-copy-address, #iframe_deposit_dialog button {
+    display: block;
+    margin: 20px auto;
+}
+#address-qr-iframe>img{
+    display: block;
+    margin: 0 auto;
+}
+#iframe-copy-address{
+    color: #2D7CC2;
+    cursor: pointer;
+    text-align: center;
+}
+#iframe_deposit_dialog button {
+    background: #13d19c;
+    border-radius: 3px;
+    padding: 10px 52px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.country_block {
+    position: relative;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 9px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.country_block h2{
+    font-size: 16px;
+    font-weight: 700;
+}
+.country_block p{
+    max-width: 300px;
+}
+.country_block .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: initial;
+    transform: scale(1.3);
+}

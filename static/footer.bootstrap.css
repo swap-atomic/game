@@ -1,0 +1,22 @@
+footer {
+    background: #212b31;
+}
+
+footer p {
+    line-height: 8px;
+}
+.footer-title-main {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -2px;
+    font-size: 2em;
+    color: white;
+}
+
+ .footer-title-secondary {
+    display: inherit;
+    color: #13D19C;
+    font-family: "forma-djr-banner";
+    font-weight: 500;
+    font-size: 2.2em;
+}

@@ -1,0 +1,130 @@
+@font-face {
+	font-family: "Gilroy-ExtraBold";
+	src: url("fonts/Radomir%20Tinkov%20-%20Gilroy-ExtraBold.ttf");
+}
+
+#become-vip-widget {
+        position: fixed;
+        top: 50%;
+        right: -6px;
+        background: linear-gradient(-225deg, rgb(45, 50, 59) 0%, rgb(23, 27, 33) 100%) !important;
+        border-radius: 4px 0px 0px 4px;
+        border: 2px solid rgb(212, 191, 118);
+        box-shadow: inset 0px -2px 4px 0px rgba(0, 0, 0, 0.23),
+        inset 0px 2px 4px 0px rgba(255, 255, 255, 0.09),
+        0px 4px 30px 10px rgba(0, 0, 0, 0.44);
+        height: 150px;
+        width: 90px;
+        cursor: pointer;
+        z-index: 10;
+}
+
+#become-vip-widget > div {
+        display:block;
+        margin-top: 10px;
+}
+.vw-img {
+        height: 62px;
+        width: 62px;
+        display:block;
+        margin: auto;
+}
+
+.vw-text {
+        display:block;
+        margin: auto;
+        color: white;
+        font-family: Gilroy-Bold;
+	font-size: 16px;
+        font-weight: bold;
+        letter-spacing: -1.05px;
+        line-height: 25px;
+        text-align: center;
+        width: 80px;
+}
+
+.vw-text-vip {
+        font-size: 42px;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        width: 80px;
+        line-height: 43px;
+}
+
+#vip-widget-dialog {
+	box-sizing: border-box;
+	width: 500px;
+	border: none;
+	background: linear-gradient(-225deg, rgb(45, 50, 59) 0%, rgb(23, 27, 33) 100%) !important;
+}
+
+.vw-crown-img {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: auto;
+}
+.vw-title-text, vw-submit-btn {
+	font-family: Gilroy-Bold;
+}
+.vw-title-text {
+	font-family: Gilroy-ExtraBold;
+	font-size: 40px;
+	font-weight: 800;
+	letter-spacing: -1.23px;
+	text-align: center;
+	color: white;
+	margin: 12px 0 15px 0;
+	line-height: 24px;
+}
+.vw-info-text {
+	line-height: 24px;
+	color: #868b97;
+	font-family: Gilroy-Medium;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.vw-email-input {
+	background: rgb(254, 254, 254);
+	border-radius: 3px;
+	border: 1px solid rgb(15, 18, 27);
+	box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.18);
+}
+.vw-submit-btn, .vw-email-input {
+	box-sizing: border-box;
+	height: 50px !important;
+	width: 327px;
+	display: block;
+	margin: auto;
+	padding: .5rem 1rem;
+	font-size: 1.25rem !important;
+	border: none;
+	margin-bottom: 15px;
+}
+.vw-submit-btn {
+	border-radius: 3px;
+	background: linear-gradient(-180deg, rgb(211, 190, 115) 0%, rgb(223, 204, 138) 100%);
+	box-shadow: inset 0px 0.51px 0px 0px rgba(255, 255, 255, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+	color: rgba(0, 0, 0, 0.39) !important;
+	font-family: Gilroy-ExtraBold;
+	font-weight: 800;
+	text-align: center;
+	letter-spacing: 0px;
+	font-size: 24px;
+	height: 50px;
+}
+.vw-email-input.vw-failed::placeholder {
+    color: red;
+}
+.vw-email-input.vw-succes::placeholder {
+    color: green;   
+}
+@media only screen and (max-width: 1000px) {
+        #become-vip-widget {
+                display: none;
+        }
+}

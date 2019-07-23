@@ -1,0 +1,162 @@
+#main_chat_container
+{
+	background:#fff;
+	border-radius: 4px;
+}
+
+
+#chat_tabs_container
+{
+    background: #222222;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #888888;
+}
+
+ul#chat_tabs
+{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+    vertical-align:middle; 
+}
+
+ul#chat_tabs li
+{
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-bottom:5px solid transparent;
+    font-size:16px;
+}
+
+ul#chat_tabs li:first-child:last-child {
+	width:100%;
+}
+
+ul#chat_tabs li.selected
+{
+    border-color:#02b7d4;
+}
+
+#chat_tabs_container
+{
+    background: #13d19d;
+    width: 100%;
+    text-align: center;
+    border-bottom:0;
+    border-radius: 4px 4px 0 0;
+}
+.chat_page
+{
+    display: none;
+    
+    overflow-x: hidden;
+    padding-left: 3px;
+    padding-right: 3px;
+    word-wrap: break-word;
+    
+    height: 348px;
+    overflow-y: auto;
+}
+.chat_page.selected
+{
+    display: block;
+}
+
+.chat_page::-webkit-scrollbar { 
+    display: none;
+}
+
+#chat_input
+{
+    border: 0;
+    padding: 2px;
+    width: 192px; 
+    margin: 0;
+}
+
+.chat_message
+{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.chat_user
+{
+    font-size: 12px;
+    margin: 2px 0 2px 0;
+}
+
+.chat_message.sender, .chat_user
+{
+    color: #888;
+    font-weight: bold;
+    cursor: pointer; 
+}
+.chat_message.sender:hover, .chat_user:hover
+{
+    text-decoration: underline;
+}
+.chat_message.sender.self, .chat_user.self
+{
+    color: #00D1FF;
+}
+.chat_message.sender.admin, .chat_user.admin
+{
+    color: #00FF00;
+}
+
+
+.chat_message.boring
+{
+    font-size: 12px;
+    color: #cccccc;
+    font-weight: bold;
+}
+.chat_message.exciting
+{
+    font-size: 12px;
+    color: #e74b1a;
+    font-weight: bold;
+}
+.chat_message.notice
+{
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+}
+
+.chat_chunk_time
+{
+    text-align: right;
+    padding-top: 10px;
+    line-height: 70%;
+}
+.chat_chunk_message
+{
+}
+
+.chat_message.time
+{
+    font-size: 10px;
+    color: #EFEFEF;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.chat_message a
+{
+    color: yellow;
+}
+
+.chat_message a:visited
+{
+    color: gray;
+}
+

@@ -1,0 +1,180 @@
+#outer_stats_container
+{
+    width: 100%;
+    text-align: center;
+    margin-top:50px;
+}
+
+#stats_container
+{
+    width: 100%;
+    display: inline-block;
+}
+
+.stat_col
+{
+    float: left;
+    width: 400px;
+}
+.stat_name 
+{
+    float: left;
+    width: 200px;
+}
+.stat_value
+{
+    float: left;
+}
+
+#statstab_container
+{
+    overflow: hidden;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+ul#tabs
+{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+    list-style-type: none; 
+    vertical-align:middle; 
+   
+} 
+ul#tabs a, ul#tabs a:visited {
+    display: block;
+    height: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom:5px solid transparent;
+}
+#tabs a {
+
+}
+#tabs a:hover, #tabs a.selected {
+	border-color:#13d19d !important;
+    text-decoration: none;
+
+}
+ul#tabs li
+{
+    float:left;
+    padding: 10px; 
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+ul#tabs li.nobackground
+{
+    background: none;
+}
+ul#tabs a#tab0
+{
+    border-radius: 6px 0 0 0;
+}
+ul#tabs a#tab5
+{
+    border-radius: 0 6px 0 0;
+}
+
+ul#tabs li.finaltab
+{
+    width:5px; 
+    height: 24px; 
+    padding: 10px 20px;
+}
+    
+#statspage_container
+{
+    padding-bottom: 10px;
+    min-height: 500px; 
+}
+.statspage
+{
+    width: 100%;
+    display: inline-block; 
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.statspage.selected
+{
+    display: block;
+}
+.statspage #account_settings
+{
+    width:100%;
+    padding: 10px;
+    background: #f1f1f1;
+    -webkit-border-radius: 6px; 
+    text-align: left;
+}
+a#account_self_stats
+{
+    color: Blue;
+}
+.statspage table 
+{
+    width:100%;
+    background: transparent;
+    text-align: left;
+    -webkit-border-radius: 6px;
+    color:#fff;
+}
+.statspage table tr th, .statspage table tr td
+{
+	padding:10px 5px;
+}
+
+.statspage table tr td.yourself
+{
+    color: #00AF00;
+}
+.statspage table tr td a
+{
+    color: #fff;
+}
+
+.statspage table tr.even
+{
+    background: #2a373d;
+}
+.statspage table tr td, .statspage table tr th, .statspage table
+{
+    border-spacing: 0px;
+}
+.statspage table tr td span
+{
+    vertical-align: baseline;
+}
+
+.verify_button
+{
+    background-image:url('images/spritesheet.png');
+    height: 18px;
+    width: 59px;
+    background-position: -4px -1711px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.stat_user a
+{
+    color: Blue;
+}
+.stat_user a:hover
+{
+    text-decoration: underline;
+}
+
+#mygames_play_for_real_bitcoins
+{
+    padding-bottom: 10px;
+}

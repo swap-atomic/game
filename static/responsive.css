@@ -1,0 +1,424 @@
+  body.small #title_container img {
+    max-width:200px;
+  }
+  body.small #title_container {
+    float:left;
+  }
+  body.small .action-area {
+    padding:5px 20px 0 5px;
+  }
+  body.small .progressive_bet .btn {
+    margin-bottom:5px;
+  }
+  body.small .item-row {
+    padding:5px;
+  }
+  body.small h2.section-header {
+    font-size:20px;
+    margin-bottom:10px;
+  }
+  body.small .top-inner {
+    float:right;
+    padding:15px 0;
+  }
+  body.small #progressive_holder {
+    font-size:14px;
+  }
+  body.small .btn-lg {
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  body.small .gameselect_item a {
+    font-size:16px;
+    line-height:16px;
+    height:auto;
+  }
+  body.small .hand_holder_container br {
+    display:none;
+  }
+  body.small #dealer_hands_holder {
+    min-height:180px;
+    margin-bottom:10px;
+    margin-top:10px;
+    position:realtive;
+  }
+  body.small .hand_holder_container .hand_dimmer {
+    position:relative;
+  }
+  body.small #player_hands_holder {
+    min-height:180px;
+  }
+  body.small .hand_counter {
+    border-radius: 300px;
+    position:absolute;
+    left:-10%;
+    margin-left:-30px;
+    top:50%;
+    transform:translate(-50%, -50%);
+    padding:2px 5px;
+  }
+  body.small .hand_holder_container {
+    position:relative;
+  }
+  body.small #account_play_for_real_bitcoins, body.small #account_password_reminder {
+    font-size:14px;
+  }
+  body.small #control_container {
+    margin-top:0;
+  }
+  body.small #account_container {
+    padding:0 5px 5px 5px;
+    position: static;
+    background:transparent;
+    margin-top:15px;
+    max-width:855px;
+    margin:0 auto;
+  }
+  body.small #account_play_for_real_bitcoins_holder, body.small #account_password_reminder_holder {
+	  position: static;
+	  margin-bottom:15px;
+	  margin-top:15px;
+  }
+  body.small #account_container .container {
+	  width:100%;
+  }
+  body.small #account .btn {
+    font-size:12px;
+    padding:5px;
+  }
+  body.small #game_bottom {
+	  margin-top:10px;
+  }
+  body.small .payout_column .payout_item {
+	  line-height: 18px;
+	  padding:0 30px;
+  }
+  body.small #main_game_center #cards {
+	  margin-top:0;
+	  text-align: center;
+  }
+  body.small #main_game_center #payout {
+	  font-size:15px;
+  }
+  body.small .hold {
+	  margin-bottom: 5px;
+	  margin-top:5px;
+	  font-size:14px;
+  }
+  body.small #main_centering_div {
+	  padding-top:10px;
+  }
+  body.small .game-card {
+	  width:119px;
+	  height:180px;
+	  background-image:url('images/bvc_card_assets_sprite_sheet_f.png');
+  }
+  body.small #controls_holder {
+	  margin-top:5px;
+  }
+  body.small .controls_container {
+	  margin-top:5px;
+  }
+  body.small #jackpot-credits {
+	  position: static;
+  }
+  
+  body.small #bets_holder {
+	  margin-top:5px;
+  }
+  body.small #remaining {
+	  height:114px;
+  }
+  body.small .num_container {
+	  height:26px;
+  }
+  body.small .num_container.last_number {
+	  height:auto;
+  }
+  body.small .num_container .scarab_icon {
+	  width:18px;
+	  height:18px;
+	  background-size: cover;
+  }
+  body.small #wheel_cont {
+	  height:208px;
+  }
+  body.small #last_numbers {
+	  height:202px;
+  }
+  body.small #progressive_bet_none .btn {
+	  margin-bottom:5px;
+  }
+  body.small .result_row {
+	  margin-top:5px;
+  }
+  body.small #game_holder {
+	  padding-bottom:5px;
+  }
+  
+  /* Cards */
+
+body.small .card_holder {
+	margin-left:15px;
+	float:none;
+	display: inline-block;
+}
+body.small .card_holder.first {
+	margin-left:0;
+}
+
+body.small .hand_card.hand_first {
+	margin-left:0;
+	margin-top:0;
+}
+body.small .hand_card {
+	margin-left:-65px;
+}
+  
+body.small .game-card.card_back
+{
+    background-position: -120px -1620px;
+}
+body.small .game-card.card_empty
+{
+    background-position: -200px -728px;
+}
+/* Clubs */
+
+body.small .game-card.card_2c
+{
+    background-position: 0px 0px;
+}
+body.small .game-card.card_3c
+{
+    background-position: -120px 0;
+}
+body.small .game-card.card_4c
+{
+    background-position: -239px 0;
+}
+body.small .game-card.card_5c
+{
+    background-position: -359px 0;
+}
+body.small .game-card.card_6c
+{
+    background-position: -479px 0;
+}
+body.small .game-card.card_7c
+{
+    background-position: -599px 0;
+}
+body.small .game-card.card_8c
+{
+    background-position: -718px 0;
+}
+body.small .game-card.card_9c
+{
+    background-position: -838px 0;
+}
+body.small .game-card.card_tc
+{
+    background-position: -958px 0;
+}
+body.small .game-card.card_jc
+{
+    background-position: -1078px 0;
+}
+body.small .game-card.card_qc
+{
+    background-position: -1197px 0;
+}
+body.small .game-card.card_kc
+{
+    background-position: -1317px 0;
+}
+body.small .game-card.card_ac
+{
+    background-position: -1437px 0;
+}
+body.small .game-card.card_2c_wild
+{
+    background-position: -1557px 0;
+}
+
+/* Diamonds */
+
+body.small .game-card.card_2d
+{
+    background-position: 0px -180px;
+}
+body.small .game-card.card_3d
+{
+    background-position: -120px -180px;
+}
+body.small .game-card.card_4d
+{
+    background-position: -239px -180px;
+}
+body.small .game-card.card_5d
+{
+    background-position: -359px -180px;
+}
+body.small .game-card.card_6d
+{
+    background-position: -479px -180px;
+}
+body.small .game-card.card_7d
+{
+    background-position: -599px -180px;
+}
+body.small .game-card.card_8d
+{
+    background-position: -718px -180px;
+}
+body.small .game-card.card_9d
+{
+    background-position: -838px -180px;
+}
+body.small .game-card.card_td
+{
+    background-position: -958px -180px;
+}
+body.small .game-card.card_jd
+{
+    background-position: -1078px -180px;
+}
+body.small .game-card.card_qd
+{
+    background-position: -1197px -180px;
+}
+body.small .game-card.card_kd
+{
+    background-position: -1317px -180px;
+}
+body.small .game-card.card_ad
+{
+    background-position: -1437px -180px;
+}
+body.small .game-card.card_2d_wild
+{
+    background-position: -1557px -180px;
+}
+/* Spades */
+
+body.small .game-card.card_2s
+{
+    background-position: 0px -360px;
+}
+body.small .game-card.card_3s
+{
+    background-position: -120px -360px;
+}
+body.small .game-card.card_4s
+{
+    background-position: -239px -360px;
+}
+body.small .game-card.card_5s
+{
+    background-position: -359px -360px;
+}
+body.small .game-card.card_6s
+{
+    background-position: -479px -360px;
+}
+body.small .game-card.card_7s
+{
+    background-position: -599px -360px;
+}
+body.small .game-card.card_8s
+{
+    background-position: -718px -360px;
+}
+body.small .game-card.card_9s
+{
+    background-position: -838px -360px;
+}
+body.small .game-card.card_ts
+{
+    background-position: -958px -360px;
+}
+body.small .game-card.card_js
+{
+    background-position: -1078px -360px;
+}
+body.small .game-card.card_qs
+{
+    background-position: -1197px -360px;
+}
+body.small .game-card.card_ks
+{
+    background-position: -1317px -360px;
+}
+body.small .game-card.card_as
+{
+    background-position: -1437px -360px;
+}
+body.small .game-card.card_2s_wild
+{
+    background-position: -1557px -360px;
+}
+
+/* Hearts */
+
+body.small .game-card.card_2h
+{
+    background-position: 0px -540px;
+}
+body.small .game-card.card_3h
+{
+    background-position: -120px -540px;
+}
+body.small .game-card.card_4h
+{
+    background-position: -239px -540px;
+}
+body.small .game-card.card_5h
+{
+    background-position: -359px -540px;
+}
+body.small .game-card.card_6h
+{
+    background-position: -479px -540px;
+}
+body.small .game-card.card_7h
+{
+    background-position: -599px -540px;
+}
+body.small .game-card.card_8h
+{
+    background-position: -718px -540px;
+}
+body.small .game-card.card_9h
+{
+    background-position: -838px -540px;
+}
+body.small .game-card.card_th
+{
+    background-position: -958px -540px;
+}
+body.small .game-card.card_jh
+{
+    background-position: -1078px -540px;
+}
+body.small .game-card.card_qh
+{
+    background-position: -1197px -540px;
+}
+body.small .game-card.card_kh
+{
+    background-position: -1317px -540px;
+}
+body.small .game-card.card_ah
+{
+    background-position: -1437px -540px;
+}
+body.small .game-card.card_2h_wild
+{
+    background-position: -1557px -540px;
+}
+
+body.small #control_help {
+	width:245px;
+	margin:0 auto;
+}

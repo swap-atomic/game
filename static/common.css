@@ -1,0 +1,2060 @@
+@import url(icons.css);
+
+@font-face {
+	font-family: "Gilroy-Bold";
+	src: url("fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+	font-family: "Gilroy-Medium";
+	src: url("fonts/Gilroy-Medium.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+}
+
+.container {
+	margin:0 auto;
+}
+
+a {
+    color:#000000;
+    text-decoration: none;
+}
+
+div, span, img
+{
+    vertical-align: middle;
+}
+
+.dialog 
+{
+    background: #fff;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #536376;
+    -webkit-box-shadow: rgba(0, 0, 0, .6) 0px 2px 12px;
+    -moz-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+    box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+    padding: 22px;
+    width: 400px;
+    position: relative;
+    display: none;
+}
+
+#expected_return_dialog
+{
+    width: 700px;
+}
+#faq_dialog, #forsale_dialog
+{
+    width: 700px;
+}
+#dialog_configure_2fa
+{
+    width: 580px;
+}
+.modal-header {
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    margin-left: -22px;
+    margin-right: -22px;
+    margin-top: -22px;
+    padding-top: 15px;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+}
+
+.dialog .close_button
+{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    cursor: pointer;
+    /* background-image: url('/static/images/spritesheet.png'); */
+    width: 24px;
+    height: 24px;
+    background-position: -3px -1161px;
+    z-index: 9999;
+    font-size: 25px;
+}
+
+#deposit_dialog, #multiple_accounts_dialog
+{
+    width: 500px;
+}
+.account_url_box
+{
+    text-align: center;
+    font-size: 11px;
+    border: 2px solid black;
+    background: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#deposit_dialog #deposit_btc
+{
+    font-weight: bold;
+    font-size: 24px;
+    float: left;
+}
+
+#deposit_dialog #deposit_details
+{
+    font-size: 12px;
+    padding-left: 20px;
+    padding-top: 10px;
+    overflow:hidden; 
+}
+#deposit_dialog #deposit_details a
+{
+    color: Blue;
+}
+
+#user_info_dialog.dialog
+{
+    width: 800px;
+}
+#user_info_dialog #user_info_player_ident
+{
+    float: left;
+}
+
+#user_info_dialog .user_info_action_buttons
+{
+    float: left;
+}
+
+#user_info_dialog .user_info_action_buttons_row
+{
+    display: block;
+}
+
+#user_info_dialog .user_info_action_button
+{
+    float: left;
+    margin: 10px 0 0 20px;
+    width: 164px;
+}
+
+
+#user_info_leaderboard_rank
+{
+    font-weight: bold;
+}
+
+#btc_credit_dialog
+{
+}
+
+#btc_credit_dialog .btc_item
+{
+    margin-bottom: 20px;
+    border: solid 2px #cccccc;
+}
+#btc_credit_dialog .btc_item a
+{
+    padding: 10px;
+    display:block;
+}
+
+#btc_credit_dialog .btc_item.selected
+{
+    border: solid 2px #7cb342;
+}
+
+#btc_credit_dialog .btc_item .btc_image
+{
+    float:left;
+    padding-top: 4px;
+}
+#btc_credit_dialog .btc_item .btc_text
+{
+    overflow:hidden; 
+    padding-top: 1px;
+    padding-left: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+#btc_credit_dialog .btc_item .btc_text .btc_small
+{
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    padding-top: 4px;
+}
+
+#withdrawal_dialog, #dialog_set_fixed_withdrawal_address
+{
+    width: 450px;
+} 
+
+#withdrawal_dialog .wait
+{
+    color: #00ff00;
+    display:none;
+}
+.dialog .error
+{
+    color: #ff0000;
+    display: none;
+}
+
+#contactus_email 
+{
+    width: 250px;
+}
+
+
+
+.dialog .title
+{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    overflow:hidden; 
+}
+
+#withdrawal_dialog .title
+{
+}
+#withdrawal_dialog label, #dialog_set_fixed_withdrawal_address label
+{
+    display: block;
+    margin-bottom: 10px;
+    color: #536376;
+    font-size: .9em;
+}
+#withdrawal_dialog input[type=text] , #dialog_set_fixed_withdrawal_address input[type=text] {
+    display: block;
+    width: 437px;
+    height: 31px;
+    background-position: -201px 0;
+    padding: 2px 8px;
+    font-size: 1.2em;
+    line-height: 31px;
+}
+#withdrawal_dialog input, #dialog_set_fixed_withdrawal_address input 
+{
+    font-size: 18px;
+}
+#withdrawal_dialog #fee 
+{
+    font-size: 0.8em;
+}
+#withdrawal_amount_container
+{
+    float: right;
+}
+#withdrawal_amount_container label
+{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+#return_to_sender_container
+{
+    display: none;
+    float: right;
+}
+#return_to_sender_container.visible
+{
+    display: inline-block;
+}
+#return_to_sender_container label
+{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+#return_to_sender_warning_container
+{
+    display: none;
+    font-size: 10px;
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#return_to_sender_warning_container.visible
+{
+    display: block;
+}
+
+.badlight {
+	color: red;
+}
+
+#footer_container
+{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+    width: 100%;
+    border-radius: 0 0 6px 6px;
+}
+#footer
+{
+    display: inline-block;
+    width: 95%;
+}
+
+.footer_item
+{
+    display: inline; 
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.footer_item a
+{
+    color: white; 
+}
+.footer_item a:hover
+{
+    text-decoration: underline; 
+}
+
+#no_credits_dialog a
+{
+    color: blue;
+}
+
+.main_container
+{
+    text-align: left;
+}
+
+#main_centering_div
+{
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.centering_div
+{
+    text-align: center;
+    min-width: 100%;
+}
+
+h1.logo
+{  
+    background-image: url('images/title_main.png');
+    width: 677px;
+    height: 70px;
+    text-indent: -9999px; 
+    margin: 3px auto 3px auto;
+}
+h2
+{
+    font-size: 1em;
+    margin-top: 0px;
+    padding-top: 15px;
+}
+
+.reason_checkmark
+{
+    display: inline-block;
+    background-image: url('images/cool_check.png');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    padding-right: 5px; 
+}
+
+.main_right
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 285px;
+    color: White;
+    text-align: left;
+    white-space: normal;
+    margin-left: 25px;
+    box-sizing: border-box;
+}
+
+.mobile .main_right {
+	display: none;
+}
+
+.main_center
+{
+    width: unset;
+    margin: auto;
+    vertical-align: top;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+#overlay_container
+{
+	transform: scale(0.9);
+}
+
+
+#controls_holder 
+{
+    position: relative;
+    margin-top: 10px;
+}
+#win_holder {
+    float: left;
+    width: 280px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+#win {
+    margin-right: 55px;
+    float: left; 
+    background-image:url('images/spritesheet.png');
+    width: 64px;
+    height: 26px;
+    background-position: -182px -1194px; 
+}
+#win.double {
+    width: 133px;
+    background-position: -288px -1133px;
+    margin-right: 25px;
+}
+#win.triple 
+{
+    width: 118px;
+    background-position: -291px -1101px;
+    margin-right: 25px;
+}
+#win_digits {
+    float: left;
+}
+.win_digit {
+    float: left;
+}
+#bet_text {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+#credit_digits {
+    display: inline;
+    margin-right: 4px;
+}
+#credits_holder {
+	font-size:28px;
+	line-height: 28px;	
+	font-weight: bold;
+	color:#13d19d;
+	text-transform: uppercase;
+	position: relative;
+	z-index:9;
+}
+
+#credits_holder.clickable:hover {
+	color:#00ffb8;
+}
+
+.credit_digit {
+    float: left;
+    margin-right: 1px;
+
+
+
+    height: 26px;
+}
+.credit_digit.credit_digit_0:before {
+	content:"0";
+}
+.credit_digit.credit_digit_1:before {
+	content:"1";
+}
+.credit_digit.credit_digit_2:before {
+	content:"2";
+}
+.credit_digit.credit_digit_3:before {
+	content:"3";
+}
+.credit_digit.credit_digit_4:before {
+	content:"4";
+}
+.credit_digit.credit_digit_5:before {
+	content:"5";
+}
+.credit_digit.credit_digit_6:before {
+	content:"6";
+}
+.credit_digit.credit_digit_7:before {
+	content:"7";
+}
+.credit_digit.credit_digit_8:before {
+	content:"8";
+}
+.credit_digit.credit_digit_9:before {
+	content:"9";
+}
+.credit_digit.credit_digit_period:before {
+	content:".";
+}
+.credit_digit.credit_digit_0 
+{
+    background-position: -195px -1254px; 
+    width: 18px;
+}
+.credit_digit.credit_digit_1
+{
+    background-position: -10px -1254px; 
+    width: 14px;
+}
+.credit_digit.credit_digit_2
+{
+    background-position: -27px -1254px;
+    width: 18px;
+}
+.credit_digit.credit_digit_3
+{
+    background-position: -47px -1254px;
+    width: 19px;
+}
+.credit_digit.credit_digit_4
+{
+    background-position: -68px -1254px;
+    width: 19px;
+}
+.credit_digit.credit_digit_5
+{
+    background-position: -90px -1254px;
+    width: 19px;
+}
+.credit_digit.credit_digit_6
+{
+    background-position: -112px -1254px;
+    width: 19px;
+}
+.credit_digit.credit_digit_7
+{
+    background-position: -132px -1254px;
+    width: 18px;
+}
+.credit_digit.credit_digit_8
+{
+    background-position: -152px -1254px;
+    width: 19px;
+}
+.credit_digit.credit_digit_9
+{
+    background-position: -174px -1254px;
+    width: 18px;
+}
+.credit_digit.credit_digit_period
+{
+    background-position: -215px -1254px;
+    width: 9px; 
+}
+.credit_digit.credit_digit_comma
+{
+    background-position: -390px -1254px;
+    width: 11px;
+}
+
+#credits_holder
+{
+    float:right;
+}
+
+#credits 
+{
+    display: none;
+    width: auto !important;
+    height: 26px;
+    text-align: left;
+    line-height: 22px;
+}
+#credits:before {
+	content:"Credits";
+	display: inline-block;
+}
+#credits.on
+{
+    display: inline-block;
+}
+#credits.free_spin {
+    margin-left: 8px;
+    background-position: -250px -1194px;
+    width: 166px;
+}
+#credits.free_spin:before {
+	content:"Free Spin";
+}
+#credits.free_spin.plural:before {
+	content:"Free Spins";
+}
+#credits.free_spin.plural {
+    width: 188px; 
+}
+#credits_play 
+{
+    display: none;
+    background-image:url('images/spritesheet.png');
+    background-position: -436px -1133px;
+    width: 85px;
+    height: 26px;
+}
+#credits_play.on
+{
+    display: inline-block;
+}
+
+#control_autoplay {
+    background:#13d19d;
+    color:#fff;
+}
+#control_autoplay.stop {
+	background:#e74b1a;
+	color:#fff;
+}
+
+
+/*
+#control_identity {
+    float:left;
+    cursor: pointer;
+    background-image:url('/static/images/spritesheet.png');
+    width: 29px;
+    height: 42px;
+    background-position: -70px -1116px;
+}
+*/
+
+.btc_token
+{
+
+}
+.btc_token.new
+{
+    width: 87px;
+    height: 42px;
+}
+.btc_token_0001
+{
+    background-position: -1317px -820px;
+}
+.btc_token_001
+{
+    background-position: -1317px -865px;
+}
+.btc_token_005
+{
+    background-position: -1317px -910px;
+}
+.btc_token_01
+{
+    background-position: -1317px -955px;
+}
+.btc_token_05
+{
+    background-position: -1317px -1000px;
+}
+.btc_token_1
+{
+    background-position: -1317px -1000px;
+}
+.btc_token_10 
+{
+    background-position: -1317px -1000px;
+}
+
+#control_btc {
+	background: #323d43;
+    color: rgba(255,255,255,.1);
+    position: relative;
+    z-index:999;
+    line-height: 15px;
+    height:36px;
+}
+#control_btc.clickable {
+	color:#fff;
+}
+#control_btc:before {
+	content:"Credit Value ";
+	color:rgba(255,255,255,.5);
+	font-size:10px;
+	position: absolute;
+	bottom:0;
+}
+.ru #control_btc:before {
+    content:"ваш счет";
+}
+
+#control_btc.btc_token_10:after {
+    content:"1 BTC";
+}
+
+#control_btc.btc_token_5:after {
+    content:"0.5 BTC";
+}
+
+#control_btc.btc_token_1:after {
+    content:"0.1 BTC";
+}
+
+#control_btc.btc_token_01:after {
+	content:"0.01 BTC";
+}
+
+#control_btc.btc_token_05:after {
+	content:"0.05 BTC";
+}
+
+#control_btc.btc_token_005:after {
+	content:"0.005 BTC";
+}
+
+#control_btc.btc_token_001:after {
+	content:"0.001 BTC";
+}
+
+#control_btc.btc_token_0001:after {
+	content:"0.0001 BTC";
+}
+
+#control_btc.btc_token_0005:after {
+    content:"0.0005 BTC";
+}
+
+
+
+
+
+
+
+
+#control_help 
+{
+  display: block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 18px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top:11px;
+  min-width:50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-sizing: border-box;
+  background:#13d19d;
+  color:#fff;
+ 
+}
+#expected_return_content .blurb
+{
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#expected_return_content table 
+{
+    width: 680px;
+    text-align: right;
+    border: 2px solid black;
+    border-spacing:0;
+    border-collapse:collapse;
+}
+#expected_return_content table td, #expected_return_content table th
+{
+    padding: 5px;
+}
+#expected_return_content table .header
+{
+    background: #ffcccc;
+}
+#expected_return_content table .sub
+{
+    text-align: left;
+    font-weight: bold;
+}
+#expected_return_content table td, #expected_return_content table th
+{
+    border: solid #888888 1px;
+}
+
+#expected_return_content table .sub td
+{
+    padding-top: 10px;
+}
+#expected_return_content table .disabled
+{
+    background: #dddddd;
+}
+#expected_return_content table .even
+{
+    background: #ffffff;
+}
+#expected_return_content table .odd
+{
+    background: #ffffff;
+}
+#expected_return_content table .left_header
+{
+    text-align: left;
+    background: #ccccff;
+}
+
+#faq_content, #tos_content, #expected_return_content {
+    font-size: 12px;
+    height: 400px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.faq_question 
+{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.faq_answer
+{
+    padding-bottom: 10px;
+}
+#server_lied_dialog {
+    font-size: 12px;
+}
+
+#provably_fair_explain_dialog.dialog {
+    width: 740px;
+}
+#provably_fair_explain_content
+{
+    height: 400px;
+    overflow: auto;
+    padding: 5px;
+}
+
+#provably_fair_dialog.dialog {
+    width: 540px;
+    border: 20px;
+    overflow-x: auto;
+    font-size: 12px;
+}
+#provably_fair_dialog .result
+{
+    margin-bottom: 5px;
+}
+#provably_fair_dialog .result_text
+{
+    padding-left: 5px;
+    padding-top: 3px;
+    float: left;
+}
+#provably_fair_dialog .result_image
+{
+    background-image:url('images/spritesheet.png');
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+
+#provably_fair_dialog .result_image.pass
+{
+    background-position: -30px -1161px; 
+}    
+#provably_fair_dialog .result_image.fail
+{
+    background-position: -3px -1161px; 
+}    
+
+#provably_fair_content {
+    overflow-x: scroll;
+    word-wrap: none;
+}
+
+.dialog.dialog-one-time {
+    width: 640px;
+}
+
+.game-card 
+{
+    background-image:url('images/bvc_card_assets_sprite_sheet.png');
+    width: 163px;
+    height: 245px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0,0,0,.8);
+}    
+.game-card.card_back
+{
+    background-position: -163px -980px;
+}
+.game-card.card_empty
+{
+    background-position: -200px -728px;
+}
+.game-card.card_2c
+{
+    background-position: 0px 0px;
+}
+.game-card.card_3c
+{
+    background-position: -163px 0;
+}
+.game-card.card_4c
+{
+    background-position: -326px 0;
+}
+.game-card.card_5c
+{
+    background-position: -489px 0;
+}
+.game-card.card_6c
+{
+    background-position: -651px 0;
+}
+.game-card.card_7c
+{
+    background-position: -815px 0;
+}
+.game-card.card_8c
+{
+    background-position: -978px 0;
+}
+.game-card.card_9c
+{
+    background-position: -1141px 0;
+}
+.game-card.card_tc
+{
+    background-position: -1303px 0;
+}
+.game-card.card_jc
+{
+    background-position: -1467px 0;
+}
+.game-card.card_qc
+{
+    background-position: -1630px 0;
+}
+.game-card.card_kc
+{
+    background-position: -1793px 0;
+}
+.game-card.card_ac
+{
+    background-position: -1956px 0;
+}
+.game-card.card_2c_wild
+{
+    background-position: -2119px 0;
+}
+.game-card.card_2d
+{
+    background-position: 0px -246px;
+}
+.game-card.card_3d
+{
+    background-position: -163px -246px;
+}
+.game-card.card_4d
+{
+    background-position: -326px -246px;
+}
+.game-card.card_5d
+{
+    background-position: -489px -246px;
+}
+.game-card.card_6d
+{
+    background-position: -651px -246px;
+}
+.game-card.card_7d
+{
+    background-position: -815px -246px;
+}
+.game-card.card_8d
+{
+    background-position: -978px -246px;
+}
+.game-card.card_9d
+{
+    background-position: -1141px -246px;
+}
+.game-card.card_td
+{
+    background-position: -1303px -246px;
+}
+.game-card.card_jd
+{
+    background-position: -1467px -246px;
+}
+.game-card.card_qd
+{
+    background-position: -1630px -246px;
+}
+.game-card.card_kd
+{
+    background-position: -1793px -246px;
+}
+.game-card.card_ad
+{
+    background-position: -1956px -246px;
+}
+.game-card.card_2d_wild
+{
+    background-position: -2119px -246px;
+}
+.game-card.card_2s
+{
+    background-position: 0px -490px;
+}
+.game-card.card_3s
+{
+    background-position: -163px -490px;
+}
+.game-card.card_4s
+{
+    background-position: -326px -490px;
+}
+.game-card.card_5s
+{
+    background-position: -489px -490px;
+}
+.game-card.card_6s
+{
+    background-position: -651px -490px;
+}
+.game-card.card_7s
+{
+    background-position: -815px -490px;
+}
+.game-card.card_8s
+{
+    background-position: -978px -490px;
+}
+.game-card.card_9s
+{
+    background-position: -1141px -490px;
+}
+.game-card.card_ts
+{
+    background-position: -1303px -490px;
+}
+.game-card.card_js
+{
+    background-position: -1467px -490px;
+}
+.game-card.card_qs
+{
+    background-position: -1630px -490px;
+}
+.game-card.card_ks
+{
+    background-position: -1793px -490px;
+}
+.game-card.card_as
+{
+    background-position: -1956px -490px;
+}
+.game-card.card_2s_wild
+{
+    background-position: -2119px -490px;
+}
+.game-card.card_2h
+{
+    background-position: 0px -736px;
+}
+.game-card.card_3h
+{
+    background-position: -163px -736px;
+}
+.game-card.card_4h
+{
+    background-position: -326px -736px;
+}
+.game-card.card_5h
+{
+    background-position: -489px -736px;
+}
+.game-card.card_6h
+{
+    background-position: -651px -736px;
+}
+.game-card.card_7h
+{
+    background-position: -815px -736px;
+}
+.game-card.card_8h
+{
+    background-position: -978px -736px;
+}
+.game-card.card_9h
+{
+    background-position: -1141px -736px;
+}
+.game-card.card_th
+{
+    background-position: -1303px -736px;
+}
+.game-card.card_jh
+{
+    background-position: -1467px -736px;
+}
+.game-card.card_qh
+{
+    background-position: -1630px -736px;
+}
+.game-card.card_kh
+{
+    background-position: -1793px -736px;
+}
+.game-card.card_ah
+{
+    background-position: -1956px -736px;
+}
+.game-card.card_2h_wild
+{
+    background-position: -2119px -736px;
+}
+.clickable
+{
+    cursor: pointer;
+}
+#help_image_container_parent
+{
+    width: 834px;
+    height: 580px;
+    z-index: 1005;
+}
+.help_image_container
+{
+    position: absolute;
+    opacity: 0.0;
+}
+.help_image_container.on
+{
+    opacity: 1.0;
+}
+.help_image
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    height:auto;
+    border-radius: 8px;
+}
+#help_page_buttons_container
+{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    z-index: 1006;
+}
+#help_page_buttons
+{
+    text-align: center;
+    width: 100%;
+    z-index: 1006;
+}
+.help_button_page
+{
+
+}
+.help_button_page.on {
+	background:#13d19d;
+	color:#fff;
+}
+#pf_tabs_container
+{
+    background: #b9dbfe; 
+    width: 100%;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+ul#pf_tabs
+{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+    vertical-align:middle; 
+} 
+
+ul#pf_tabs a, ul#pf_tabs a:visited {
+    display: block;
+    height: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#pf_tabs a:hover, #pf_tabs a.selected {
+    color: #E45B00;
+    box-shadow: 0 -2px 3px #C8C8C8;
+    text-decoration: none;
+    background: url(images/bgr_tabs_selected.png) repeat-x bottom;
+}
+
+ul#pf_tabs li
+{
+    float:left;
+    padding: 10px; 
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    background: url(images/tabs_sep.png) no-repeat left;
+    margin: 0;
+    padding: 0;
+}
+ul#pf_tabs li.finaltab
+{
+    width:5px;
+    height: 24px;
+    padding: 10px 20px;
+}
+#pf_page_container
+{
+    background: #b9dbfe;
+    padding-bottom: 10px;
+    min-height: 400px;
+}
+.pf_page a, .pf_page a:visited
+{
+    font-weight: bold;
+}
+
+.pf_page, .pfdd_page
+{
+    width: 520px;
+    display: inline-block; 
+    display: none;
+    margin-left: 10px;
+    overflow-x: auto;
+}
+.pf_page.selected, .pfdd_page.selected
+{
+    display: block;
+}
+#shutdown_time_container {
+    z-index: 1001;
+    color: #ffffff;
+    font-weight: bold;
+    background: #880000;
+     display: none;
+}
+#shutdown_time_container.visible 
+{
+    display: block;
+}
+#shutdown_time_text 
+{
+    text-align: center;
+}
+
+.double_won {
+    color: #00af00;
+}
+.double_lost {
+    color: #af0000;
+}
+
+.more_games_text
+{
+    display: inline-block;
+    text-align: center;
+    width: 170px;
+    margin-bottom: 4px;
+    color: #FFD100;
+    font-weight: bold;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.outdated_browser {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.outdated_browser a {
+    color: #fff;
+    font-weight: bold;
+}
+.outdated_browser a:hover {
+    text-decoration: underline
+}
+
+#top_mini 
+{
+    min-width: 1000px;
+    display: inline-block;
+}
+.top_mini_logo
+{
+    float: left;
+    margin-right: 70px;
+    margin-top: 20px;
+}
+.top_mini_game
+{
+    float: left;
+}
+
+.play_x_credits 
+{
+    float: left;
+    margin-left: 0px;
+    background-image:url('images/spritesheet.png');
+    height: 26px;
+}
+#play_x_credits_play
+{
+    background-position: -435px -1133px;
+    width: 85px;
+}
+#play_x_credits_one
+{
+    background-position: -10px -1254px; 
+    width: 14px;
+    margin-left: 8px;
+}
+#play_x_credits_zero
+{
+    background-position: -195px -1254px; 
+    width: 18px;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+#play_x_credits_five
+{
+    background-position: -90px -1254px;
+    width: 19px;
+    margin-left: 5px;
+}
+#play_x_credits_credits 
+{
+    background-position: -182px -1166px;
+    width: 141px;
+    margin-left: 5px;
+}
+
+.auto_play_banner
+{
+    float: left;
+    margin-left: 0px;
+    background-image:url('images/spritesheet.png');
+    width: 141px;
+    height: 27px;
+}
+#auto_play_auto
+{
+    background-position: -437px -1165px;
+    width: 92px;
+}
+#auto_play_play
+{
+    background-position: -434px -1131px;
+    width: 85px;
+    margin-left: 5px;
+}
+#expected_return_dialog .stat
+{
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+
+#autoplay_dialog
+{
+}
+
+#autoplay_dialog .autoplay_mode_item
+{
+    margin-bottom: 20px;
+    border: solid 2px #cccccc;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#autoplay_dialog .autoplay_mode_item.selected
+{
+    border: solid 2px #7cb342;
+}
+
+#autoplay_dialog .autoplay_mode_item .autoplay_mode_text
+{
+    overflow:hidden; 
+    padding-top: 1px;
+    padding-left: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#autoplay_dialog .autoplay_mode_item .autoplay_mode_text .autoplay_mode_text_small
+{
+    font-weight: normal;
+    font-size: 14px;
+    color: #888;
+    padding-top: 4px;
+}
+
+.autoplay_option
+{
+    font-weight: italic;
+    font-size: 14px;
+    color: #e74b1a;
+    padding-top: 4px;
+}
+
+.autoplay_start_image
+{
+
+}
+
+.stat_game
+{
+}
+
+#next_server_hash_row
+{
+    text-align: center; 
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.play_for_real_bitcoins, .password_reminder
+{
+    display: none;
+    font-style: normal;
+}
+.play_for_real_bitcoins.on, .password_reminder.on
+{
+    display: block;
+}
+
+#leaderboards_self_user
+{
+    font-weight: bold;
+}
+#gamearea
+{
+    position: relative;
+
+}
+
+#ultra_container
+{
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background:#212b31;
+  background-size: contain;
+}
+
+#ultra_container.mobile
+{
+    background-image: none;
+}
+
+.alley_container_table
+{
+    display: table;
+}
+
+.alley_container_row
+{
+    display: table-row;
+}
+
+.alley_left
+{
+    display: table-cell;
+    width: 29px;
+}
+.alley_left.ultra
+{
+    background:url('images/alley_left.png');
+}
+.alley_right
+{
+    display: table-cell;
+    width: 29px;
+}
+.alley_right.ultra
+{
+    background:url('images/alley_right.png');
+}
+#center_outer_alley_contents
+{
+    position: relative;
+    width: 100%;
+}
+
+#forsale_title
+{
+    width: 130px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 12px;
+}
+
+.account_link
+{
+    font-weight: bold;
+    font-size: 20px;
+    border-color: black;
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: white;
+}
+
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+
+.pull-left {
+	float:left;
+}
+.pull-right {
+	float:right;
+}
+
+.row {
+	margin-left:-15px;
+	margin-right:-15px;
+}
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+    padding-left:15px;
+    padding-right:15px;
+    box-sizing: border-box;
+}
+.col-md-2 {
+	width: 16.66666667%;
+}
+.col-md-3 {
+	width:25%;
+}
+.col-md-4 {
+    width: 33.33333333%;
+}
+.col-md-5 {
+	width: 41.66666667%;
+}
+.col-md-6 {
+	width:50%;
+}
+.col-md-8 {
+	width:66.66666667%;
+}
+.col-md-12 {
+	width:100%;
+}
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    clear:both;
+}
+.btn, .help_button_page {
+	display:inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 18px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-width:50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.btn-default {
+	
+}
+.btn-white {
+	border:2px solid #fff;
+	background:transparent;
+	color:#fff;
+}
+
+.btn-success {
+	background-image: linear-gradient(-180deg, #15d6a0 0%, #0ac18e 100%);
+	color:#fff;
+}
+
+.btn-status {
+	background:#e0e0e0;
+	color:#fff;
+}
+.btn-full {
+	width:100%;
+}
+.btn-lg {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.selected .btn-status {
+	background:#13d19d;
+}
+
+.item-row {
+	padding:11px;
+	border-bottom:1px solid #ddd;
+}
+.no-padding-right {
+	padding-right:0;
+}
+.no-padding-left {
+	padding-left:0;
+}
+
+.border-right {
+	border-right:1px solid #ddd;
+}
+.border-left {
+	border-left:1px solid #ddd;
+}
+
+h2.section-header {
+	text-align: left;
+	font-size:25px;
+	color:#fff;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    color:#000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding:0px 0px 8px 0px
+}
+.panel-body {
+	padding:15px;
+}
+.jackpot {
+	float:right;
+	display: none;
+	position: relative;
+}
+
+.jackpot .panel-body {
+	padding:0;
+}
+.jackpot .jackpot-title, .jackpot .jackpot-right {
+	padding:15px;
+	text-align: center;
+}
+.jackpot .jackpot-right {
+
+}
+.jackpot .jackpot-title {
+	background:#eee;
+	color:#222;
+	border-radius: 4px 0 0 4px;
+
+}
+
+#jackpot-value {
+	color:#13d19d;
+	top:-2px;
+	vertical-align: top;
+}
+#jackpot-credits {
+	position: absolute;
+	left:0;
+	bottom:-12px;
+	font-size:14px;
+	color:#fff;
+	width: 100%;
+	text-align: right;
+}
+
+.btn-ss {
+	background: #13d19c;
+	color: white;
+	margin-left: 5px;
+}
+
+.jackpot-values span {
+	display:block;
+}
+
+.no-wrap {
+	white-space: nowrap;
+	overflow-y: auto;
+	width:100%;
+}
+
+
+@media screen and (max-width: 768px) {
+	.main_right {
+		float:none;
+		display: block;
+		margin:0 auto;
+		width:100%;
+	}
+	#main_chat_container {
+		display: none;
+	}
+	#ultra_container, #center_outer_alley_contents {
+		width:100%;
+	}
+	.main_center, #overlay_container {
+		width: 855px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+        .container {
+                width: 855px;
+        }
+}
+
+ @media screen and (min-width: 1440px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+.emailinput {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 18px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-width: 50px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+button.dropbtn {
+    background-color: #212b31;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    line-height: normal;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    color: #d9d9d9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    margin-left: 58px;
+    position: absolute;
+    background-color: #212b31;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {background-color: #737373}
+
+.show {display:block;}
+
+#overlay_container {
+	position: relative;
+	transform-origin: top center;
+	
+}
+
+#reload_overlay {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    background-color: black;
+    color: red;
+    font-size: 25px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 5;
+}
+/* New Game CSS */
+.control-btn {
+	float: right;
+	background-image: url(images/spritesheet.png) !important;
+	height: 20px;
+	cursor: pointer;
+	margin: unset;
+	background-color: white;
+	border-radius: 5px;
+	background-origin: content-box !important;
+	padding: 2px 5px !important;
+	display: block !important;
+	min-width: unset !important;
+	min-height: unset !important;
+}
+#fullscreen-btn {
+	background-position: -271px -739px !important;
+	width: 19px;
+    margin: 6px auto;
+    margin-left: 10px;
+    display: none;
+}
+.fullscreen-toggle {
+	width: 100%
+}
+#sound-toggle-btn {
+	background-position: -302px -739px !important;
+	width: 23px;
+    margin: 6px 10px;
+}
+.new-row {
+	display: flex;
+}
+.new-text-left {
+	display: flex !important;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.text-center {
+	flex-grow: 2;
+}
+.new-row {
+	justify-content: space-between;
+}
+.new-btn-controls>* {
+	margin: 0 2px;
+}
+#info_logo {
+	cursor: pointer;
+    margin: 3px auto;
+    margin-left: 10px;
+}
+/* End Game CSS*/
+/* New Header CSS */
+a {
+	cursor: pointer;
+}
+#account_container {
+	display: none;
+}
+#cards_holder {width:100%; left:auto; transform:none;}
+#main_game_center #cards {text-align:center;}
+
+@media only screen and (max-width: 1000px) {
+	#gamearea {
+		padding-top: 90px;
+	}
+	#main_centering_div {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 425px) {
+	#account-link { font-size: 12px ! important; }
+	#footer-dropdown, #footer-dropup {
+		display: none;
+	}
+	#overlay_container {
+		margin-top: 10vh;
+		transform: scale(.60) !important;
+	}
+	.main_center {
+		transform: scale(.98);
+	}
+	#help_dialog {
+        transform: scale(.7);
+    }
+    #help_image_container_parent {
+        transform: scale(.85);
+    }
+	#overlay_container {
+	    width: 768px !important;
+	    margin: auto;
+	    vertical-align: top;
+	    box-sizing: border-box;
+	}
+	#footer_container {
+		display: none;
+	}
+	#ultra_container, #center_outer_alley_contents {
+		min-height: 100vh;
+    }
+	#ultra_container, #center_outer_alley_contents, .container {
+		min-width: 400px;
+		max-width: 700px;
+    }
+}
+@media only screen and (max-width: 375px) {
+	.main_center {
+		transform: scale(.9) !important;
+	}
+}
+@media only screen and (max-height: 375px) {
+	.main_center, #overlay_container {
+		width: 855px;
+	}
+	#overlay_container {
+		width: 855px;
+	}
+}
+
+@media screen and (max-height: 425px) {
+	#overlay_container {
+        	transform: scale(0.7);
+	}
+	#ultra_container, #center_outer_alley_contents, .container {
+		max-width: unset !important;
+	}
+	#overlay_container {
+	}
+	#help_dialog {
+		transform: scale(.7);
+	}
+	#help_image_container_parent {
+		transform: scale(.85);
+	}
+	#main_centering_div {
+		padding: 0 !important;
+	}
+}
+@media only screen and (max-width: 823px) {
+	#footer_container {padding-bottom: 150px;}
+	#provably_fair_explain_dialog.dialog {
+		width: 300px;
+	}
+}
+/* Safari popup CSS */
+@media screen and (orientation: landscape) and (max-width: 1000px){
+	#safari_use_orientation {
+		position: absolute;
+		top: 150px;
+		left: 50%;
+		z-index: 1006;
+		width: 300px;
+		background-color: white;
+		border: 2px solid black;
+		padding: 20px;
+	}
+	#safari_use_orientation button{
+		height: 25px;
+		width: 30%;
+		font-size: 14px;
+		border: 1px solid black;
+		background: black;
+		color: white;
+		border-radius: 8px;
+		margin-top: 15px;
+	}
+	#gamearea {
+		padding-top: unset;
+	}
+	#info_logo {
+		display: none;
+	}
+}
+@media screen and (orientation: portrait) and (max-width: 1000px) {
+	#fullscreen-btn {
+		display: none !important;
+	}
+	#overlay_container {
+		transform-origin: top left;
+		margin-left: 0%;
+	}
+}
+/* End Safari CSS*/
+
+#__sideshift__selection input[name="amount"] {
+	width: 100% !important;
+}

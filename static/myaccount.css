@@ -1,0 +1,420 @@
+body,  body > div {
+  background: #fbfcff !important;
+}
+
+#footer, #footer a {
+	color: black !important;
+}
+
+.acc-container {
+  padding: 0px 7%;
+}
+
+.acc-container p {
+  white-space: normal;
+}
+
+.container {
+  width:100%
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('fonts/Gilroy-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gilroy-SemiBold';
+	src: url('fonts/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+.acc-container {
+	font-family: 'Gilroy-Medium';
+	font-style: normal;
+	font-size: 16px;
+}
+
+.acc-container h2 {
+	font-family: 'Gilroy-SemiBold';
+	font-size: 22px;
+}
+
+.acc-container strong {
+	font-family: 'Gilroy-SemiBold';
+}
+
+.acc-container .bold {
+	font-family: 'Gilroy-SemiBold';
+}
+
+.acc-container .lightbold {
+	font-family: 'Gilroy-SemiBold';
+}
+
+.acc-container .nav-content {
+  width: 84%;
+  float: right;
+}
+
+.acc-container .sidenav {
+  width: 175px;
+  width: 15%;
+  border-left: 3px solid #13d19c;
+  overflow-x: hidden;
+  display: inline-block;
+}
+
+.acc-container .top-shade {
+  height: 50px;
+}
+
+.acc-container .sidenav > a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #252525;
+  display: block;
+}
+
+.acc-container .sidenav a:hover {
+  color: #00c88d;
+}
+
+.acc-container .sidenav a:active, .acc-container .sidenav > a.active {
+	font-family: 'Gilroy-SemiBold';
+	color: #00c88d !important;
+}
+
+.acc-container button.acc-button {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	width: 137px;
+	height: 32px;
+	background: linear-gradient(-180deg, #15d6a0 0%, #0ac18e 100%);
+	box-shadow: inset 0px 0.51px 0px 0px #ffffff;
+	border-radius: 3px 3px 3px 3px;
+	border: none;
+}
+
+button.acc-button:active {
+    box-shadow: inset 0px 0px 20px 0px #00000038;
+}
+
+button.acc-button:disabled {
+    background: linear-gradient(-180deg, #c1c1c1 0%, #949494 100%);
+}
+
+button.acc-button:focus {
+    outline: none;
+}
+
+.acc-container input.acc-input {
+	display: block;
+	padding-left: 10px;
+    font-size: 14px;
+	width: 254px;
+	height: 36px;
+}
+
+#input-2fa > input {
+	font-size: 18px;
+	width: 36px;
+	height: 36px;
+	background: #ffffff;
+	text-align: center;
+}
+
+#account-link {
+	color: #0ac18e;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	padding: 10px 15px 10px 15px;
+	display: inline-block;
+	background: #eff0f4;
+	border-radius: 3px 3px 3px 3px;
+}
+
+#gauth_qr_content {
+	background-color: white;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.25);
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+}
+
+#gauth_qr_content > img {
+    display:block;
+    margin:5px;
+}
+
+#gauth_secret {
+	display: inline-block;
+	margin: auto 0;
+	text-align: center;
+}
+
+.acc-container input {
+  background: #fff;
+  color: #525865;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: inherit;
+  outline: none;
+  -webkit-transition: .18s ease-out;
+  -moz-transition: .18s ease-out;
+  -o-transition: .18s ease-out;
+  transition: .18s ease-out;
+}
+
+.acc-container input:disabled {
+	background-color: #dfdfdf;
+}
+
+.acc-container input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.acc-container input:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.acc-container input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+.acc-container input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.acc-container .verify {
+	cursor: pointer;
+	text-align: center;
+}
+
+.acc-container .space {
+	margin: 10px 10px;
+}
+
+.acc-container .show {
+	display: block;
+}
+
+.acc-container .hide {
+	display: none;
+}
+
+.acc-container table {
+	border-spacing: 0px;
+	width: 90%;
+}
+
+.acc-container .select-style {
+    border: 1px solid #ccc;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1);
+}
+
+.acc-container .select-style select {
+    margin-left: 10px;
+    font-size: 35px;
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    -webkit-appearance: none;
+}
+
+.acc-container .select-style select:focus {
+    outline: none;
+}
+
+.acc-container #mygames {
+	line-height: 30px;
+	text-align: center;
+}
+
+.acc-container .even {
+	background-color: #dadada;
+}
+
+.acc-container .odd {
+	background-color: #f5f5f5;
+}
+
+.acc-container tr.thead {
+	margin: 20px 10px 20px 10px;
+	background-color: #a7a7a7;
+}
+
+/* Base for label styling */
+.acc-container [type="checkbox"]:not(:checked),
+.acc-container [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.acc-container [type="checkbox"]:not(:checked) + label,
+.acc-container [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.6em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+.acc-container [type="checkbox"]:not(:checked) + label:before,
+.acc-container [type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1em; height: 1em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+.acc-container [type="checkbox"]:not(:checked) + label:after,
+.acc-container [type="checkbox"]:checked + label:after {
+  content: '\2713\0020';
+  position: absolute;
+  top: -0.15em; left: 0em;
+  font-size: 2.1em;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+/* checked mark aspect changes */
+.acc-container [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.acc-container [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+.acc-container [type="checkbox"]:disabled:not(:checked) + label:before,
+.acc-container [type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+.acc-container [type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+.acc-container [type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+.acc-container [type="checkbox"]:checked:focus + label:before,
+.acc-container [type="checkbox"]:not(:checked):focus + label:before {
+
+}
+
+/* hover style just for information */
+.acc-container label:hover:before {
+  border: 2px solid #02b37f!important;
+}
+
+@media only screen and (max-width: 425px) {
+	#withdrawal_amount { margin-bottom: 10px; }
+}
+
+@media only screen and (max-width: 1000px), (max-height: 425px) {
+	.nav-content {
+		width:100% !important;
+		margin: auto;
+		float: none !important;
+	}
+
+	.acc-container h2 {
+		padding-top: 20px;
+	}
+
+	#account, #security, #cashout, #reports {
+		margin-top: 30px;
+	}
+	
+	#cashout {min-height: 90vh;}
+
+	.bigscreen {
+		display: none !important;
+	}
+
+	.acc-container .hide {
+		display: block;
+		position: relative;
+	}
+
+	.acc-container {
+		padding-top: 80px;
+	}
+}
+
+.acc-container .smscreen {
+	display: none;
+}
+.acc-container #withdrawal_amount {
+	display: inline-block;
+}
+/* Safari popup CSS */
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+	#safari_use_orientation {
+		left: 130px;
+	}
+}
+/* End Safari CSS*/
+/* 870px or lower mobile design */
+@media only screen and (max-width: 1000px) {
+	#gamearea {
+		padding-top: 20px;
+	}
+	#header-top {
+		height: 40px !important;
+	}
+	.header-title, #header-hamburger{
+		line-height: 40px !important;
+	}
+	#header-hamburger img {
+		height: 30px;
+	}
+	#hamburger-menu {
+		top: 60px !important;
+	}
+	#hamburger-menu h2 {
+		font-size: 20px;
+	}
+	#hamburger-menu h3{
+		font-size: 16px;
+	}
+	#pre_deposit_dialog {
+		font-size: 12px;
+	}
+	#pre_deposit_dialog h1{
+		font-size: 18px;
+	}
+	#pre_deposit_dialog h2{
+		font-size: 14px;
+	}
+	#deposit-header {
+		padding: 14px 8.5px;
+	}
+	#deposit-qr-section {
+		padding: 10px 12px 30px 12px;
+	}
+}
