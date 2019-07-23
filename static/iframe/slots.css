@@ -1,0 +1,108 @@
+
+body {
+	background: #212b31;
+}
+body.small #main_centering_div {
+	padding-top: 25px;
+}
+#controls_holder {
+	margin-top: 25px;
+}
+#iframe-header {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-items: center;
+	height: 40px;
+	margin-bottom: 17px;
+}
+#iframe-title {
+	font-size: 1.5em;
+	margin: auto;
+}
+.iframe-title-main {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: white;
+}
+.iframe-title-secondary {
+    color: #13D19C;
+    font-family: "forma-djr-banner";
+    font-weight: 500;
+}
+h2.section-header {
+	position: absolute;
+	display: block;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#control_playforreal {
+	position: absolute;
+	right: 0;
+	background: #13d19c;
+	border-radius: 4px;
+	width: 200px;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.ru #control_playforreal {
+    font-size: 14px;
+}
+#credits_holder {
+	line-height: 22px;
+	cursor: default;
+}
+#credits_holder:hover {
+	color: #00ffb8;
+}
+#playforreal_dialog {
+	padding: 50px 72px;
+}
+#playforreal_dialog h1, #playforreal_dialog #flavor, #playforreal_dialog a {
+	display: block;
+	text-align: center;
+	margin-bottom: 16px;
+	font-weight: bold;
+}
+#playforreal_dialog h1 {
+	font-size: 24px;
+}
+#playforreal_dialog button {
+	cursor: pointer;
+}
+#flavor {
+	color: #6A717F;
+	font-size: 16px;
+	width: 336px;
+	margin: 25px auto;
+}
+#playforreal_yes {
+	background: #13d19c;
+	border-radius: 3px;
+	height: 33px;
+	width: 216px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#playforreal_no {
+	cursor: pointer;
+	color: #2D7CC2;
+	font-size: 14px;
+}
+#line_indicators_left, #line_indicators_right {
+    z-index: 1;
+}
+#line_holder .line {
+    transform: scaleX(1.32) translateX(40px);
+}
+.ru #credits:before {
+    content: "кредиты";
+}

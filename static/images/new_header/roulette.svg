@@ -1,0 +1,25 @@
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="cashgames" transform="translate(-115.000000, -177.000000)" stroke="#13d19c" stroke-width="1.125">
+            <g id="Group-6" transform="translate(107.000000, 119.000000)">
+                <circle id="Oval" cx="17.5" cy="67.5" r="8.5"></circle>
+                <circle id="Oval" cx="17.5" cy="67.5" r="5.5"></circle>
+                <path d="M16.1483636,69.2919286 C16.4677773,69.7584367 16.9722986,70.0222568 17.4996364,69.998525 C18.328,69.998525 19,69.4389007 19,68.7492625 C19,68.0596244 18.328,67.5 17.4996364,67.5 C16.6712727,67.5 16,66.9403756 16,66.2499299 C16,65.5594843 16.6712727,65.001475 17.4996364,65.001475 C18.0269741,64.9777432 18.5314954,65.2415633 18.8509091,65.7080714" id="Path"></path>
+                <path d="M17.5,69 L17.5,70" id="Path"></path>
+                <path d="M17.5,64 L17.5,65" id="Path"></path>
+                <path d="M16.1185,59 L16.8815,62" id="Path"></path>
+                <path d="M18.141,62 L18.859,59" id="Path"></path>
+                <path d="M9,65 L12,66" id="Path"></path>
+                <path d="M13,64 L11,62" id="Path"></path>
+                <path d="M11,73 L13,71" id="Path"></path>
+                <path d="M12,69 L9,70" id="Path"></path>
+                <path d="M18.8815,75 L18.1185,72" id="Path"></path>
+                <path d="M16.859,72 L16.141,75" id="Path"></path>
+                <path d="M25,70 L22,69" id="Path"></path>
+                <path d="M22,71 L24,73" id="Path"></path>
+                <path d="M24,62 L22,64" id="Path"></path>
+                <path d="M22,65 L25,64" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
